@@ -1,3 +1,6 @@
-<h2>First Project</h2>
-
-<router-outlet></router-outlet>
+<div class="section">
+  <h2>{{welcome}}</h2>
+  <input type="text"[(ngModel)] = "name">
+  <button type="button" (click)= "setValue()">Submit</button>
+  <router-outlet></router-outlet>
+</div>

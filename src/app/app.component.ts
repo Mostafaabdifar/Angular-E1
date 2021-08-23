@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'MyFirstApp';
+  name : string = '';
+  welcome :string ='';
+  
+  setValue(){
+    this.welcome = 'Welcome ' + this.name;
+  }
 }
